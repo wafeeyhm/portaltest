@@ -3,18 +3,19 @@
     include_once($_SERVER['DOCUMENT_ROOT'] . "/" . $sitename[1] . "/pages/header-index.php");
 ?>
 
-    <form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Username</label>
-      <input type="test" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <label for="inputPassword" class="sr-only">Service Number</label>
-      <input type="text" id="inputPassword" class="form-control" placeholder="Service Number" required>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
-    </form>
+<form>
+    <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="My Username">
+    </div>
+    <div class="form-group">
+    <input typse="password" class="form-control" id="exampleInputPassword1" placeholder="My Password">
+    </div>
+    <div class="form-group">
+    <input typse="text" class="form-control" id="exampleInputPassword1" placeholder="Service number">
+    </div>
+    <button type="submit" class="btn btn-warning btn-block">Login</button>
+    <small id="emailHelp" class="form-text text-muted">Please register here if you dont have a My account</small>
+</form>
 
 <?php 
     include_once($_SERVER['DOCUMENT_ROOT'] . "/" . $sitename[1] . "/pages/footer-index.php"); 
